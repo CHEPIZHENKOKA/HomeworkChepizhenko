@@ -1,0 +1,3 @@
+[flake8]
+max-line-length = 119
+exclude = .venv, poetry.lock, pyproject.toml, .git, __pycache__
