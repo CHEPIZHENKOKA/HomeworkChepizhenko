@@ -21,6 +21,7 @@ def get_mask_account(account_number: Union[str, int]) -> str:
     return masked_account_number
 
 
+# Пример использования
 if __name__ == '__main__':
     user_input_card = int(input("Введите номер карты: "))
     print(get_mask_card_number(user_input_card))
