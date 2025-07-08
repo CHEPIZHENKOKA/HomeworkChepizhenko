@@ -17,14 +17,14 @@ def filter_by_state(items: List[Dict[str, Any]], state: str = 'EXECUTED') -> Lis
     return filtered_items
 
 
-def sort_by_date(items: List[Dict[str, Any]], ascending: bool = True) -> List[Dict[str, Any]]:
+def sort_by_date (items: List[Dict[str, Any]], ascending: bool = True) -> List[Dict[str, Any]]:
     """Сортирует список словарей по полю 'date'.
     Параметр ascending: True — по возрастанию, False — по убыванию (по умолчанию)."""
     # Определяем порядок сортировки: убывание (reverse=True), если ascending=False
     reverse_order = ascending
 
     # Функция для получения даты из словаря
-    def get_date(item: Dict[str, Any]) -> datetime:
+    def get_date_from_dict (item: Dict[str, Any]) -> datetime:
 
         # Извлекаем первые 10 символов строки даты (ГГГГ-ММ-ДД)
         date_str = item['date'][:10]
@@ -33,7 +33,7 @@ def sort_by_date(items: List[Dict[str, Any]], ascending: bool = True) -> List[Di
         return datetime.strptime(date_str, '%Y-%m-%d')
 
     # Сортируем список словарей, используя get_date как ключ
-    sorted_by_date = sorted(items, key=get_date, reverse=reverse_order)
+    sorted_by_date = sorted(items, key=get_date_from_dict, reverse=reverse_order)
     return sorted_by_date
 
 
