@@ -2,7 +2,7 @@ from src.masks import get_mask_card_number, get_mask_account
 
 
 def mask_account_card(user_input_number: str) -> str:
-    # Копируем входную строку
+    """Функция проверяет тип введенных пользователем данных и использует маску"""
     result = user_input_number
 
     # Проверяем, начинается ли строка с "счет" (регистронезависимо)
@@ -24,7 +24,7 @@ def mask_account_card(user_input_number: str) -> str:
     return result
 
 
-def getdate(user_input_date: str) -> str:
+def get_date(user_input_date: str) -> str:
     # Извлекаем дату из строки (первые 10 символов: ГГГГ-ММ-ДД)
     datepart = user_input_date[:10]
     # Разделяем по дефису
