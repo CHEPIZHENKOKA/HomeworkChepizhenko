@@ -1,10 +1,12 @@
 [tool.poetry]
-name = "test-poetry"
+name = "Test_Poetry"
 version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
-
+packages = [
+            { include = "src", from = "." },
+        ]
 [tool.poetry.dependencies]
 python = "^3.13"
 

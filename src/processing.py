@@ -22,11 +22,12 @@ def sort_by_date(data: List[Dict[str, Any]], ascending: bool = False) -> List[Di
     )
 
 
-if __name__ == "__main__":
-    state_input = input("Введите искомый статус транзакции (EXECUTED или CANCELED): ").upper()
-    state = state_input if state_input else 'EXECUTED'  # Используем 'EXECUTED' при пустом вводе
-    ascending_input = bool(input("Сортировать по возрастанию даты? (True или False): "))
-    ascending = ascending_input if ascending_input else False
-    sorted_transactions = filter_by_state(transactions_list, state)
-
-    print(sort_by_date(sorted_transactions, ascending))
+# Пример использования
+#if __name__ == "__main__":
+#    state_input = input("Введите искомый статус транзакции (EXECUTED или CANCELED): ").upper()
+#    state = state_input if state_input else 'EXECUTED'  # Используем 'EXECUTED' при пустом вводе
+#    ascending_input = bool(input("Сортировать по возрастанию даты? (True или False): "))
+#    ascending = ascending_input if ascending_input else False
+#    sorted_transactions = filter_by_state(transactions_list, state)
+#
+#    print(sort_by_date(sorted_transactions, ascending))
