@@ -54,9 +54,9 @@ def get_mask_account(account: str) -> str:
 
 
 # Пример использования
-if __name__ == '__main__':
-    user_input_card = input("Введите номер карты: ")
-    print(get_mask_card_number(user_input_card))
-
-    user_input_account = input("Введите номер счета: ")
-    print(get_mask_account(user_input_account))
+#if __name__ == '__main__':
+#    user_input_card = input("Введите номер карты: ")
+#    print(get_mask_card_number(user_input_card))
+#
+#    user_input_account = input("Введите номер счета: ")
+#    print(get_mask_account(user_input_account))

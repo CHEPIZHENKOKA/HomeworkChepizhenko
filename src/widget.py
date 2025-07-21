@@ -26,8 +26,8 @@ def get_date(user_input_date: str) -> str:
 
 
 # Пример использования
-if __name__ == '__main__':
-    user_input_number = input("Введите номер карты или счета: ")
-    print(mask_account_card(user_input_number))
-    user_input_date = input("Введите дату: ")
-    print(get_date(user_input_date))
+#if __name__ == '__main__':
+#    user_input_number = input("Введите номер карты или счета: ")
+#    print(mask_account_card(user_input_number))
+#    user_input_date = input("Введите дату: ")
+#    print(get_date(user_input_date))
